@@ -286,7 +286,7 @@ footer {
     }
 
     .secondsection {
-        height: 400vw;
+        height: 350vw;
         margin-bottom: 20vh;
     }
 
@@ -322,6 +322,10 @@ footer {
         left: -130px;
         min-width: 200px;
     }
+  footer {
+        position: absolute;
+        margin-top: 20vh;
+    }
     .footer{
     flex-direction: column;
 }
@@ -353,5 +357,6 @@ footer {
     }
 
 }
+
 
 
