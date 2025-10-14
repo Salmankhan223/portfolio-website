@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .about-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 40px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        /* Fade-in Animation */
+        opacity: 0;
+        animation: fadeIn 1.2s ease-in-out forwards;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        /* Makes the image circular */
+        object-fit: cover;
+        /* Prevents image stretching */
+        border: 5px solid #e9ecef;
+        margin-bottom: 20px;
+    }
+
+    .about-container h1 {
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin: 0;
+        color: #1a2a40;
+        /* Dark blue from contact page */
+    }
+
+    .about-container .intro-text {
+        font-size: 1.2rem;
+        color: #555;
+        margin-top: 10px;
+        margin-bottom: 40px;
+        font-weight: 300;
+    }
+
+    .content-section {
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .content-section h2 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #333;
+        border-bottom: 2px solid rgb(2, 2, 71);
+        /* Accent color line */
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+    }
+
+    .content-section p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #444;
+    }
+
+    /* Skills Grid Styling */
+    .skills-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        /* Space between skill items */
+    }
+
+    .skill-item {
+        background-color: #e9ecef;
+        /* Light gray background for tags */
+        color: #333;
+        padding: 8px 18px;
+        border-radius: 20px;
+        /* Pill shape */
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .skill-item:hover {
+        background-color: #007bff;
+        color: #fff;
+        transform: translateY(-2px);
+    }
+
+    /* CTA Button Styling */
+    .cta-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        padding: 14px 30px;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.1rem;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        margin-top: 20px;
+    }
+
+    .cta-button:hover {
+        background-color: #0056b3;
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    }
+    
+    @media (max-width:800px) {
+     .about-container{
+        margin: 20px 10px;
+     }
+    }
+
+    /* --- Keyframes for fade-in animation (if not already present) --- */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+              <div id="hamburger">
+                <img style="filter: invert(1);" src="hamburger.svg" alt="">
+            </div>
+            <div class="left">Salman portfolio</div>
+            <div class="right">
+                <ul>
+                       <div class="close">
+                        <img style="filter: invert(1);" src="close.svg" alt="">
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+             
+        </nav>
+    </header>
+    <main class="about-container">
+
+        <img src="leftbg.webp" alt="A photo of [Your Name]" class="profile-pic">
+
+        <h1>Hi, I'm Salman!</h1>
+        <p class="intro-text">I'm a passionate Web Developer and Graphic Designer based in India, with a love for creating beautiful,
+            intuitive, and responsive websites.</p>
+
+        <div class="content-section">
+            <h2>My Journey</h2>
+            <p>
+              My journey is currently unfolding as I pursue my degree in Computer Science, where I am building a solid foundation in technology. I believe in translating theoretical knowledge into practical skills, and this portfolio is a testament to that philosophy. Each project is an opportunity for me to learn, grow, and get closer to my goal of becoming a developer who creates clean, efficient, and user-friendly digital experiences
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-item">HTML5</span>
+                <span class="skill-item">CSS3</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">React</span>
+                <span class="skill-item">Node.js</span>
+                <span class="skill-item">UI/UX Design</span>
+                <span class="skill-item">Figma</span>
+                <span class="skill-item">Python</span>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <a href="index.html" class="cta-button">View My Work</a>
+        </div>
+
+    </main>
+<script src="script.js"></script>
+</body>
+
+</html>

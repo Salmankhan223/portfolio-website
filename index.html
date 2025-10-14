@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salman - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    body {
+
+        animation: fadeIn 1.2s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(0);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div id="hamburger">
+                <img style="filter: invert(1);" src="hamburger.svg" alt="">
+            </div>
+            <div class="left">Salman portfolio</div>
+            <div class="right">
+                <ul>
+                    <div class="close">
+                        <img style="filter: invert(1);" src="close.svg" alt="">
+                    </div>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Salman</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Git-hub</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="image1.webp" alt="">
+            </div>
+        </section>
+        <hr>
+        <section>
+            <div class="slider">
+                <div class="scrolling-container" id="scrolling">
+                    <img src="slider1.jpeg" alt="">
+                    <img src="slider2.jpeg" alt="">
+                    <img src="slider3.jpeg" alt="">
+                    <img src="slider1.jpeg" alt="">
+                    <img src="slider2.jpeg" alt="">
+                    <img src="slider3.jpeg" alt="">
+                </div>
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png" alt="">
+                    <div class="vertical-title">
+                        HTMl Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in writing semantic, accessible, and SEO-optimized HTML5 code. I ensure clean
+                        structure and maintain best practices for scalable front-end development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css.png" alt="">
+                    <div class="vertical-title">
+                        CSS Styling
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in crafting responsive, visually appealing, and consistent user interfaces using modern
+                        CSS. I specialize in writing modular, maintainable styles using methodologies like BEM and
+                        organizing stylesheets for scalability. From flexbox and grid layouts to transitions and
+                        animations, I use CSS to bring designs to life while ensuring cross-browser compatibility and
+                        performance.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js.png" alt="">
+                    <div class="vertical-title">
+                        JavaScript Developer
+                    </div>
+                    <div class="vertical-desc">
+                        Experienced in writing clean, efficient, and modular JavaScript code for dynamic and interactive
+                        web applications. Skilled in DOM manipulation, ES6+ features, asynchronous programming
+                        (Promises, async/await), and API integrations to build responsive front-end functionality.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="python.png" alt="">
+                    <div class="vertical-title">
+                        Python Development
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in writing clean, readable, and efficient Python code for a variety of applications
+                        including scripting, automation, data processing, and backend development. Comfortable with core
+                        concepts like OOP, file handling, and working with libraries such as NumPy, Pandas, and Flask.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="graphic.jpeg" alt="">
+                    <div class="vertical-title">
+                        Graphic Designing
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in creating visually compelling designs that align with brand identity and user
+                        engagement goals. Proficient with tools like Adobe Photoshop, Illustrator, and Figma, I design
+                        logos, social media graphics, UI elements, and marketing materials with a focus on clarity,
+                        consistency, and creativity.
+                    </div>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Salman Developer Portfolio</h2>
+            </div>
+            <div class="footer-second">
+                <h3>Quick links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Connect with me on</h3>
+                <ul>
+                    <li><a href="https://wa.me/+917309735175?text=Hi">Whatsapp</a></li>
+                    <li><a
+                            href="https://www.linkedin.com/in/salman-khan-590167326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkdIn</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; salmanportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- setup and start animation -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer'], typeSpeed: 50,
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
