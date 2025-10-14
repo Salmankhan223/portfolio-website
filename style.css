@@ -294,6 +294,7 @@ footer {
         height: 1200px;
         width: 3px;
         margin: 70px 0;
+        margin-bottom: 20vh;
     }
 
     .secondsection .vertical {
@@ -349,4 +350,5 @@ footer {
     nav ul li a {
         padding: 7px 12px;
     }
+
 }
